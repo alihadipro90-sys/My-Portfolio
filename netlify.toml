@@ -1,26 +1,17 @@
-# ============================================================
-# Netlify Configuration
-# Muhammad Hadi Portfolio
-# React + Vite + Tailwind CSS
-# ============================================================
+
 
 [build]
   command = "npm run build"
   publish = "dist"
 
-# ============================================================
-# SPA REDIRECT
-# Allows React Router / client-side routes to work correctly
-# ============================================================
+
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
 
-# ============================================================
-# SECURITY HEADERS
-# ============================================================
+
 
 [[headers]]
   for = "/*"
@@ -31,10 +22,7 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "camera=(), microphone=(), geolocation=()"
 
-# ============================================================
-# STATIC ASSETS
-# Long-term caching for Vite-generated assets
-# ============================================================
+
 
 [[headers]]
   for = "/assets/*"
@@ -42,9 +30,7 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
-# ============================================================
-# FAVICON
-# ============================================================
+
 
 [[headers]]
   for = "/favicon.ico"
@@ -52,9 +38,7 @@
   [headers.values]
     Cache-Control = "public, max-age=86400"
 
-# ============================================================
-# ROBOTS.TXT
-# ============================================================
+
 
 [[headers]]
   for = "/robots.txt"
@@ -62,9 +46,7 @@
   [headers.values]
     Content-Type = "text/plain"
 
-# ============================================================
-# SITEMAP
-# ============================================================
+
 
 [[headers]]
   for = "/sitemap.xml"
@@ -72,9 +54,7 @@
   [headers.values]
     Content-Type = "application/xml"
 
-# ============================================================
-# OPTIONAL: ENVIRONMENT-SPECIFIC BUILD
-# ============================================================
+
 
 [context.production]
   command = "npm run build"
