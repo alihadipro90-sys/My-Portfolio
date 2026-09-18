@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import H2Logo from "../../assets/H2logo.png";
+import H2logo from "../../assets/H2logo.png";
 
 export function Nav({ path, navigate }) {
   const [open, setOpen] = useState(false);
@@ -29,7 +29,7 @@ export function Nav({ path, navigate }) {
         >
           <span className="inline-flex h-8 w-8 items-center justify-center overflow-hidden border border-primary bg-black p-1">
             <img
-              src={H2Logo}
+              src={H2logo}
               alt="Muhammad Hadi monogram"
               className="h-full w-full object-contain"
             />
