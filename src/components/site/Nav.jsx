@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import H2Logo from "../../assets/H2Logo.png";
+import H2Logo from "../../assets/H2logo.png";
 
 export function Nav({ path, navigate }) {
   const [open, setOpen] = useState(false);
