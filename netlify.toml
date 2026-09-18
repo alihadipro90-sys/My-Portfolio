@@ -1,4 +1,3 @@
-```toml
 # ============================================================
 # Netlify Configuration
 # Muhammad Hadi Portfolio
@@ -85,4 +84,3 @@
 
 [context.branch-deploy]
   command = "npm run build"
-```
