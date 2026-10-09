@@ -61,17 +61,34 @@ function Education({ education }) {
           Education
         </h2>
         <ul className="grid gap-6">
-          {education.map(([title, body], index) => (
-            <Reveal
-              as="li"
-              key={title}
-              delay={index * 80}
-              className="border-t border-border pt-5"
-            >
-              <h3 className="text-base font-semibold">{title}</h3>
-              <p className="mt-2 text-sm text-muted-foreground">{body}</p>
-            </Reveal>
-          ))}
+          {education.map(([title, body], index) => {
+            const showUogBadge =
+              title === "Bachelor's in Software Engineering";
+
+            return (
+              <Reveal
+                as="li"
+                key={title}
+                delay={index * 80}
+                className="border-t border-border pt-5"
+              >
+                <div className="flex items-start gap-4">
+                  {showUogBadge && (
+                    <img
+                      src="/uog%20logo.png"
+                      alt="University of Gujrat logo"
+                      loading="lazy"
+                      className="h-20 w-20 shrink-0 rounded-md border border-border bg-white/5 object-contain p-2"
+                    />
+                  )}
+                  <div className="min-w-0">
+                    <h3 className="text-base font-semibold">{title}</h3>
+                    <p className="mt-2 text-sm text-muted-foreground">{body}</p>
+                  </div>
+                </div>
+              </Reveal>
+            );
+          })}
         </ul>
       </div>
     </section>

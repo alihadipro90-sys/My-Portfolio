@@ -157,8 +157,8 @@ export const portfolioData = {
     projects: [
       {
         img: dev1,
-        title: "Auth-App",
-        desc: "A multi-tenant analytics dashboard with role-based access, scheduled reports and live charting over aggregated MongoDB data.",
+        title: "Cheqnovex",
+        desc: "Automate cheque filling with intelligent data entry and precise print alignment for dates, payee details, amounts in words and digits, and stamps.",
         stack: ["React", "Node.js", "Express", "MongoDB", "Recharts"],
         features: [
           "Role-based access",
