@@ -1,7 +1,7 @@
 import designHero from "../../assets/design-hero.jpg";
 import uiUx from "../../assets/ui ux.jpeg";
 import devHero from "../../assets/dev-hero.jpg";
-import dev1 from "../../assets/dev-1.jpg";
+import dev1 from "../../assets/dev-1.png";
 import dev2 from "../../assets/dev-2.jpg";
 import dev3 from "../../assets/dev-3.jpg";
 import mywork from "../../assets/mywork.jpg";
