@@ -56,7 +56,7 @@ function DevelopmentProjects({ projects }) {
       <div className="section-x py-20">
         <p className="eyebrow">Case studies</p>
         <h2 className="mt-4 font-display text-4xl font-extrabold">
-          Development portfolio
+          Development projects
         </h2>
         <div className="mt-12 grid gap-8 lg:grid-cols-3">
           {projects.map((project, index) => (
